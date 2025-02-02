@@ -6,6 +6,7 @@
 - [Inspiration](#inspiration)
 - [What It Does](#what-it-does)
 - [How It Works](#how-it-works)
+- [How to Use](#how-to-use)
 - [Challenges](#challenges)
 - [Accomplishments](#accomplishments)
 - [What We Learned](#what-we-learned)
@@ -35,6 +36,9 @@ The idea for **CleanBucket** emerged from a desire to make recycling more fun an
 
 5. **Data Storage and Communication:**  
    All user data and interactions are stored using **MongoDB Atlas**, while video content is stored on a secure cloud server.
+
+## How to Use
+Once you clone the repo, you need to do deal with the Xcode a little bit. If not set already, go to Signing & Capabilities and see App Transportation Security Exception, then add video.cleanbucket.co. This is needed because iOS requires HTTPS. You might also have to go to General -> Targets -> CleanBucket -> Frameworks, Libraries, and Embedded Content and add Alamofire! Once you've done so, you have two options to use our little project: run it on a simulator or run it on your phone! The simplest is the simulator, which you can build and launch with the top left button; however, it is very slow so we suggest using your own device. You can connect your phone to your computer and change the simulator target to your phone, which can be seen at the center top of Xcode (DISCLAIMER: you may need to use dev mode for this). Then, Voilà!
 
 ## Challenges
 
