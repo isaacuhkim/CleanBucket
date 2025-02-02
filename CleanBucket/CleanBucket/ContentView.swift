@@ -60,6 +60,7 @@ struct ContentView: View {
     @State private var currentVideo: VideoItem? // Store current video for playback
     @State private var player: AVPlayer? // Keep track of the AVPlayer instance (now in ContentView)
     @State private var isPlayerReady: Bool = false // Flag to check if the player is ready to play a video
+    @State private var showUploadButton: Bool = false // Show upload button once video is selected
     
     var body: some View {
         ZStack {
@@ -200,6 +201,12 @@ struct ContentView: View {
         }
         .sheet(isPresented: $isImagePickerPresented) {
             ImagePicker(sourceType: .photoLibrary, selectedImage: $selectedImage, selectedVideoURL: $selectedVideoURL, mediaTypes: ["public.movie"])
+                .onChange(of: selectedVideoURL) { newURL in
+                    // Automatically upload video as soon as it's selected
+                    if let videoURL = newURL {
+                        uploadSelectedVideo(videoURL) // Call the function to upload the video
+                    }
+                }
         }
     }
     
@@ -269,6 +276,19 @@ struct ContentView: View {
         player?.pause() // Pause the current video
         player = nil // Reset the player
         isPlayerReady = false // Reset player readiness
+    }
+    
+    // Automatically upload video after it's selected
+    func uploadSelectedVideo(_ videoURL: URL) {
+        VideoUpload.uploadVideo(videoURL: videoURL) { success, message in
+            DispatchQueue.main.async {
+                if success {
+                    print("Upload successful: \(message ?? "")")
+                } else {
+                    print("Upload failed: \(message ?? "")")
+                }
+            }
+        }
     }
 
     // Show options after video ends
