@@ -33,9 +33,22 @@
 		F906F2BE2D4E90E4005581D4 /* CleanBucketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanBucketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F9B138C42D4F510D00EB6DB2 /* Exceptions for "CleanBucket" folder in "CleanBucket" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F906F2A32D4E90E2005581D4 /* CleanBucket */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F906F2A62D4E90E2005581D4 /* CleanBucket */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F9B138C42D4F510D00EB6DB2 /* Exceptions for "CleanBucket" folder in "CleanBucket" target */,
+			);
 			path = CleanBucket;
 			sourceTree = "<group>";
 		};
@@ -413,11 +426,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CleanBucket/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GD9N48R92;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleanBucket/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME)";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = CleanBucket;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = CYboys.CleanBucket;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -442,11 +459,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CleanBucket/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GD9N48R92;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleanBucket/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME)";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = CleanBucket;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = CYboys.CleanBucket;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
